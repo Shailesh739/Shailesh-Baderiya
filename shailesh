@@ -1,0 +1,19 @@
+public class shailesh {
+    public static void main(String args[]) {
+        String name = "hello world";
+        // giving the string
+        int count = 0;
+        // declare count variable for a count
+        for (int i = 0; i < name.length(); i++) // use for loop for count every word
+        {
+            char names = name.charAt(i);
+            // condition for decount "aeiou"
+            if (names >= 'a' && names <= 'z' && "aeiou".indexOf(names) == -1) {
+                count++;
+                // use for count
+            }
+        }
+        // print count
+        System.out.println("your count is  " + count);
+    }
+}
